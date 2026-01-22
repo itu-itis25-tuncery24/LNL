@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HCP Directory — Loop and Learn</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-ring.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/hcp.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <img src="assets/logo-ring.svg" alt="Loop and Learn ring" class="logo" />
+        <img src="image.png" alt="Loop and Learn" class="brand-image" />
+      </div>
+      
+      <div class="header-controls">
+        <div class="theme-toggle" id="themeToggle">
+          <input type="checkbox" id="darkModeToggle" class="toggle-input" aria-label="Toggle dark mode">
+          <label for="darkModeToggle" class="toggle-label">
+            <div class="toggle-track">
+              <div class="toggle-thumb">
+                <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </div>
+              <div class="toggle-icons">
+                <svg class="track-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="track-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <article id="content" class="content">
+        <section class="content-section">
+          <div class="page-header">
+            <h1 data-en="Healthcare Provider Directory" data-tr="Sağlık Hizmet Sağlayıcıları Dizini" data-it="Directory dei Fornitori di Assistenza Sanitaria">Healthcare Provider Directory</h1>
+            <div class="text-content">
+              <p data-en="Find Loop-friendly healthcare providers around the world. Click on a country to see available providers in that region." data-tr="Dünya çapında Loop dostu sağlık hizmet sağlayıcılarını bulun. O bölgedeki mevcut sağlayıcıları görmek için bir ülkeye tıklayın." data-it="Trova fornitori di assistenza sanitaria amichevoli con Loop in tutto il mondo. Clicca su un paese per vedere i fornitori disponibili in quella regione.">Find Loop-friendly healthcare providers around the world. Click on a country to see available providers in that region.</p>
+              
+              <div class="color-guide">
+                <h3 data-en="🎨 Color Guide" data-tr="🎨 Renk Rehberi" data-it="🎨 Guida Colori">🎨 Color Guide</h3>
+                <div class="color-guide-grid">
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #e5e7eb;"></div>
+                    <span class="color-label" data-en="No Providers" data-tr="Sağlayıcı Yok" data-it="Nessun Fornitore">No Providers</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #bbf7d0;"></div>
+                    <span class="color-label" data-en="Limited (1-2)" data-tr="Sınırlı (1-2)" data-it="Limitato (1-2)">Limited (1-2)</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #86efac;"></div>
+                    <span class="color-label" data-en="Some (3-5)" data-tr="Bazı (3-5)" data-it="Alcuni (3-5)">Some (3-5)</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #4ade80;"></div>
+                    <span class="color-label" data-en="Good (6-10)" data-tr="İyi (6-10)" data-it="Buono (6-10)">Good (6-10)</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #22c55e;"></div>
+                    <span class="color-label" data-en="Excellent (11-20)" data-tr="Mükemmel (11-20)" data-it="Eccellente (11-20)">Excellent (11-20)</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #16a34a;"></div>
+                    <span class="color-label" data-en="Very Good (21-50)" data-tr="Çok İyi (21-50)" data-it="Molto Buono (21-50)">Very Good (21-50)</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #15803d;"></div>
+                    <span class="color-label" data-en="Outstanding (51-100)" data-tr="Olağanüstü (51-100)" data-it="Eccezionale (51-100)">Outstanding (51-100)</span>
+                  </div>
+                  <div class="color-guide-item">
+                    <div class="color-indicator" style="background-color: #14532d;"></div>
+                    <span class="color-label" data-en="Exceptional (100+)" data-tr="Benzersiz (100+)" data-it="Straordinario (100+)">Exceptional (100+)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          <!-- Navigator Section -->
+          <div class="hcp-navigator">
+            <div class="navigator-controls">
+              <div class="search-box">
+                <input type="text" id="countrySearch" placeholder="Search countries..." data-en-placeholder="Search countries..." data-tr-placeholder="Ülke ara..." data-it-placeholder="Cerca paesi..." />
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="M21 21l-4.35-4.35"/>
+                </svg>
+              </div>
+              
+              <button id="resetFilters" class="reset-btn" data-en="Clear Search" data-tr="Aramayı Temizle" data-it="Cancella Ricerca">Clear Search</button>
+            </div>
+            
+            <div class="stats-summary">
+              <div class="stat-item">
+                <span class="stat-number" id="totalCountries">0</span>
+                <span class="stat-label" data-en="Countries" data-tr="Ülkeler" data-it="Paesi">Countries</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="totalProviders">0</span>
+                <span class="stat-label" data-en="Providers" data-tr="Sağlayıcılar" data-it="Fornitori">Providers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="activeCountries">0</span>
+                <span class="stat-label" data-en="Active" data-tr="Aktif" data-it="Attivi">Active</span>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <!-- Map Container -->
+          <div class="map-container">
+            <div id="hcpMap" class="hcp-map"></div>
+          </div>
+          
+          <!-- Countries List -->
+          <div class="countries-list-section">
+            <h3 data-en="🌍 Countries with Healthcare Providers" data-tr="🌍 Sağlık Hizmet Sağlayıcıları Olan Ülkeler" data-it="🌍 Paesi con Fornitori di Assistenza Sanitaria">🌍 Countries with Healthcare Providers</h3>
+            <div class="countries-grid" id="countriesGrid">
+              <!-- Countries will be populated here -->
+            </div>
+          </div>
+          
+          <!-- HCP List Container -->
+          <div class="hcp-list-container" id="hcpListContainer" style="display: none;">
+            <div class="hcp-list-header">
+              <h2 id="countryTitle">Healthcare Providers</h2>
+              <button class="close-btn" id="closeHcpList">×</button>
+            </div>
+            <div class="hcp-search-container">
+              <div class="hcp-search-box">
+                <input type="text" id="hcpSearch" placeholder="Search by name, specialty, city, hospital..." data-en-placeholder="Search by name, specialty, city, hospital..." data-tr-placeholder="İsim, uzmanlık, şehir, hastane ile ara..." data-it-placeholder="Cerca per nome, specialità, città, ospedale..." />
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="M21 21l-4.35-4.35"/>
+                </svg>
+              </div>
+              <button id="clearHcpSearch" class="clear-hcp-search-btn" data-en="Clear" data-tr="Temizle" data-it="Cancella">Clear</button>
+            </div>
+            <div class="hcp-list" id="hcpList">
+              <!-- HCP items will be populated here -->
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> Loop and Learn</small>
+    </footer>
+
+    <!-- HCP Detail Modal -->
+    <div class="hcp-modal" id="hcpModal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modalTitle">Provider Details</h3>
+          <button class="close-btn" id="closeModal">×</button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- Provider details will be populated here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Language Switcher -->
+    <div class="floating-lang-switcher" id="floatingLangSwitcher">
+      <button class="floating-lang-btn" id="floatingLangBtn" aria-label="Language selector">
+        <svg class="world-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </button>
+      <div class="lang-options" id="langOptions">
+        <button class="lang-option-btn" data-lang="en" id="langEn" style="background-image: url('uk-usa.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 0;"></button>
+        <button class="lang-option-btn" data-lang="it" id="langIt" style="background-image: url('italy.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 0;"></button>
+        <button class="lang-option-btn" data-lang="tr" id="langTr" title="Türkçe" style="background-image: url('turkey.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 0;"></button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/hcp-data.js"></script>
+    <script src="js/hcp-map.js"></script>
+    <script src="js/hcp-page.js"></script>
+  </body>
+</html>

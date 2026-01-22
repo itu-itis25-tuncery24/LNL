@@ -1,0 +1,169 @@
+{
+  "videos": {
+    "1-EN": {
+      "title": "Opening – Introduction to the Program",
+      "subtitles": [
+        {"start": 0, "end": 3, "text": "Welcome! In this Module."},
+        {"start": 3, "end": 6, "text": "we'll explore Loop—an open-source automated insulin delivery system."},
+        {"start": 6, "end": 9, "text": "developed by the diabetes community."},
+        {"start": 9, "end": 12, "text": "Loop offers a flexible, customizable approach to managing blood sugar."},
+        {"start": 12, "end": 15, "text": "providing an alternative to commercial automated insulin delivery systems."},
+        {"start": 15, "end": 18, "text": "Whether you're a healthcare professional, a caregiver, or a person with diabetes."},
+        {"start": 18, "end": 21, "text": "understanding Loop will help you make informed decisions about its use."},
+        {"start": 21, "end": 24, "text": "Let's dive in!"}
+      ]
+    },
+    "1-IT": {
+      "title": "Apertura – Introduzione al Programma",
+      "subtitles": [
+        {"start": 0, "end": 3, "text": "Benvenuti! In questo modulo."},
+        {"start": 3, "end": 6, "text": "esploreremo Loop, un sistema open-source di somministrazione automatizzata di insulina."},
+        {"start": 6, "end": 9, "text": "sviluppato dalla diabetes community."},
+        {"start": 9, "end": 12, "text": "Loop offre un approccio flessibile e personalizzabile alla gestione della glicemia."},
+        {"start": 12, "end": 15, "text": "rappresentando un'alternativa ai sistemi commerciali di somministrazione automatizzata di insulina."},
+        {"start": 15, "end": 18, "text": "Che tu sia un professionista sanitario, un caregiver o una persona con diabete."},
+        {"start": 18, "end": 21, "text": "comprendere Loop ti aiuterà a prendere decisioni informate e consapevoli."}
+      ]
+    },
+    "2-EN": {
+      "title": "1.1 What is Loop? Core Principles",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop automates insulin delivery using three key components."},
+        {"start": 4, "end": 7, "text": "a CGM, an insulin pump, and an algorithm running on an iPhone."},
+        {"start": 7, "end": 10, "text": "Loop is exclusively designed for Apple devices."},
+        {"start": 10, "end": 13, "text": "requiring an iPhone to operate."},
+        {"start": 13, "end": 16, "text": "Loop automates insulin delivery using three key components."},
+        {"start": 16, "end": 19, "text": "a CGM that continuously monitors glucose levels."},
+        {"start": 19, "end": 22, "text": "an insulin pump that delivers precise doses of insulin."},
+        {"start": 22, "end": 25, "text": "and an algorithm running on a smartphone to adjust insulin delivery dynamically."},
+        {"start": 25, "end": 28, "text": "This process helps maintain stable blood sugar levels with minimal manual input."}
+      ]
+    },
+    "2-IT": {
+      "title": "1.1 Cos'è Loop? Principi Fondamentali",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop automatizza la somministrazione di insulina utilizzando tre componenti chiave."},
+        {"start": 4, "end": 7, "text": "un CGM, un microinfusore e un algoritmo installato su un iPhone."},
+        {"start": 7, "end": 10, "text": "Loop è progettato esclusivamente per dispositivi Apple."},
+        {"start": 10, "end": 13, "text": "e richiede un iPhone per funzionare."},
+        {"start": 13, "end": 16, "text": "Loop automatizza la somministrazione di insulina utilizzando tre componenti chiave."},
+        {"start": 16, "end": 19, "text": "un CGM che monitora continuamente i livelli di glucosio."},
+        {"start": 19, "end": 22, "text": "un microinfusore che eroga dosi precise di insulina."},
+        {"start": 22, "end": 25, "text": "e un algoritmo che gira su uno smartphone per regolare dinamicamente la somministrazione di insulina."},
+        {"start": 25, "end": 28, "text": "Questo processo aiuta a mantenere stabili i livelli di glicemia con un intervento manuale minimo."}
+      ]
+    },
+    "3-EN": {
+      "title": "1.2 Why Choose Automated Insulin Delivery (AID) Systems?",
+      "subtitles": [
+        {"start": 0, "end": 3, "text": "Visual: Side-by-side comparison of Multiple Daily Injections (MDI) vs. Loop."},
+        {"start": 3, "end": 6, "text": "MDI (Multiple Daily Injections): Requires manual insulin dosing for meals and corrections."},
+        {"start": 6, "end": 9, "text": "No automatic glucose adjustments."},
+        {"start": 9, "end": 12, "text": "Higher risk of blood sugar fluctuations."},
+        {"start": 12, "end": 15, "text": "AID Systems (Loop & Commercial Systems): Adjust insulin delivery automatically based on CGM data."},
+        {"start": 15, "end": 18, "text": "Reduces daily management burden by minimizing manual adjustments."},
+        {"start": 18, "end": 21, "text": "Helps maintain glucose levels within a target range more effectively."}
+      ]
+    },
+    "3-IT": {
+      "title": "1.2 Perché scegliere i sistemi di somministrazione automatizzata di insulina (AID)?",
+      "subtitles": [
+        {"start": 0, "end": 3, "text": "Visuale: Confronto affiancato tra iniezioni multiple giornaliere (MDI) e Loop."},
+        {"start": 3, "end": 6, "text": "MDI (Iniezioni Multiple Giornaliere): Richiede la somministrazione manuale di insulina per i pasti e le correzioni."},
+        {"start": 6, "end": 9, "text": "Nessuna regolazione automatica del glucosio."},
+        {"start": 9, "end": 12, "text": "Maggiore rischio di fluttuazioni della glicemia."},
+        {"start": 12, "end": 15, "text": "Sistemi AID (Loop e sistemi commerciali): Regolano automaticamente l'erogazione di insulina in base ai dati del CGM."},
+        {"start": 15, "end": 18, "text": "Riduce il carico della gestione quotidiana minimizzando gli aggiustamenti manuali."},
+        {"start": 18, "end": 21, "text": "Aiuta a mantenere i livelli di glucosio entro un intervallo target in modo più efficace."}
+      ]
+    },
+    "4-EN": {
+      "title": "1.3 Comparing Commercial AID Systems vs. Loop",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Both commercial AID systems and Loop automate insulin delivery."},
+        {"start": 4, "end": 7, "text": "helping users maintain stable glucose levels."},
+        {"start": 7, "end": 10, "text": "The main difference is accessibility and control."},
+        {"start": 10, "end": 13, "text": "commercial AID systems are regulated, provide structured support, and require subscriptions."},
+        {"start": 13, "end": 16, "text": "In contrast, Loop offers a flexible, open-source alternative."},
+        {"start": 16, "end": 19, "text": "allowing users to customize their settings."},
+        {"start": 19, "end": 22, "text": "but requiring them to take full responsibility for installation, maintenance, and troubleshooting."}
+      ]
+    },
+    "4-IT": {
+      "title": "1.3 Confronto tra sistemi AID commerciali e Loop",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Sia i sistemi AID commerciali che Loop automatizzano la somministrazione di insulina."},
+        {"start": 4, "end": 7, "text": "aiutando gli utenti a mantenere livelli di glucosio stabili."},
+        {"start": 7, "end": 10, "text": "La principale differenza riguarda l'accessibilità e il controllo."},
+        {"start": 10, "end": 13, "text": "i sistemi AID commerciali sono regolati, offrono supporto strutturato e richiedono abbonamenti."},
+        {"start": 13, "end": 16, "text": "Al contrario, Loop rappresenta un'alternativa open-source più flessibile."},
+        {"start": 16, "end": 19, "text": "permettendo agli utenti di personalizzare le impostazioni."},
+        {"start": 19, "end": 22, "text": "ma richiedendo loro piena responsabilità per l'installazione, la manutenzione e la risoluzione dei problemi."}
+      ]
+    },
+    "5-EN": {
+      "title": "1.4 Who Can Use Loop? (Eligibility & Considerations)",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop is an excellent choice for individuals who are comfortable with technology."},
+        {"start": 4, "end": 7, "text": "self-management, and troubleshooting."},
+        {"start": 7, "end": 10, "text": "However, it requires a commitment to learning and maintenance."},
+        {"start": 10, "end": 13, "text": "Unlike commercial AID systems, Loop users must build and update their app independently."},
+        {"start": 13, "end": 16, "text": "Before starting Loop, it's essential to evaluate whether this level of involvement."},
+        {"start": 16, "end": 19, "text": "suits your lifestyle and diabetes management needs."}
+      ]
+    },
+    "5-IT": {
+      "title": "1.4 Chi può utilizzare Loop? (Idoneità e considerazioni)",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop è un'ottima scelta per chi è a proprio agio con la tecnologia."},
+        {"start": 4, "end": 7, "text": "la gestione autonoma e la risoluzione dei problemi."},
+        {"start": 7, "end": 10, "text": "Tuttavia, richiede un impegno nell'apprendimento e nella manutenzione."},
+        {"start": 10, "end": 13, "text": "A differenza dei sistemi AID commerciali, gli utenti di Loop devono costruire e aggiornare l'app in modo indipendente."},
+        {"start": 13, "end": 16, "text": "Prima di iniziare a usare Loop, è fondamentale valutare se questo livello di coinvolgimento."},
+        {"start": 16, "end": 19, "text": "si adatta al proprio stile di vita e alle esigenze di gestione del diabete."}
+      ]
+    },
+    "6-EN": {
+      "title": "1.5 Safe Use & Best Practices for Loop Users",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop is a reliable and effective tool for managing insulin delivery."},
+        {"start": 4, "end": 7, "text": "but like any technology, it requires some attention to ensure it is functioning correctly."},
+        {"start": 7, "end": 10, "text": "Checking your settings, making sure your phone and connected devices are working."},
+        {"start": 10, "end": 13, "text": "and being prepared to manage insulin manually if needed."},
+        {"start": 13, "end": 16, "text": "will help ensure a safe and smooth experience."},
+        {"start": 16, "end": 19, "text": "If something doesn't seem right, simple troubleshooting steps can often resolve the issue quickly."}
+      ]
+    },
+    "6-IT": {
+      "title": "1.5 Uso sicuro e migliori pratiche per gli utenti di Loop",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop è uno strumento affidabile ed efficace per la gestione della somministrazione di insulina."},
+        {"start": 4, "end": 7, "text": "ma, come qualsiasi tecnologia, richiede un po' di attenzione per assicurarsi che funzioni correttamente."},
+        {"start": 7, "end": 10, "text": "Controllare le impostazioni, verificare che il telefono e i dispositivi connessi siano operativi."},
+        {"start": 10, "end": 13, "text": "e essere pronti a gestire l'insulina manualmente, se necessario."},
+        {"start": 13, "end": 16, "text": "contribuirà a garantire un'esperienza sicura e senza intoppi."},
+        {"start": 16, "end": 19, "text": "Se qualcosa non sembra funzionare come dovrebbe, semplici passaggi di risoluzione dei problemi possono spesso risolvere rapidamente la situazione."}
+      ]
+    },
+    "7-EN": {
+      "title": "Summary & Closing",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop represents a new level of empowerment in diabetes management."},
+        {"start": 4, "end": 7, "text": "By understanding its components, comparing it to commercial AID systems."},
+        {"start": 7, "end": 10, "text": "and evaluating safety considerations."},
+        {"start": 10, "end": 13, "text": "users and healthcare providers can make informed decisions."},
+        {"start": 13, "end": 16, "text": "Stay connected with the LoopDocs and Loop and Learn community for ongoing support."}
+      ]
+    },
+    "7-IT": {
+      "title": "Riassunto e chiusura",
+      "subtitles": [
+        {"start": 0, "end": 4, "text": "Loop rappresenta un nuovo livello di autonomia nella gestione del diabete."},
+        {"start": 4, "end": 7, "text": "Comprendendo i suoi componenti, confrontandolo con i sistemi AID commerciali."},
+        {"start": 7, "end": 10, "text": "e valutando le considerazioni sulla sicurezza."},
+        {"start": 10, "end": 13, "text": "gli utenti e i professionisti sanitari possono prendere decisioni informate."},
+        {"start": 13, "end": 16, "text": "Rimani connesso con LoopDocs e la community di Loop and Learn per un supporto continuo."}
+      ]
+    }
+  }
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loop and Learn — Bilingual Module</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-ring.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/components/subtitle.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <img src="assets/logo-ring.svg" alt="Loop and Learn ring" class="logo" />
+        <img src="image.png" alt="Loop and Learn" class="brand-image" />
+      </div>
+      
+      <div class="header-controls">
+        <div class="theme-toggle" id="themeToggle">
+          <input type="checkbox" id="darkModeToggle" class="toggle-input" aria-label="Toggle dark mode">
+          <label for="darkModeToggle" class="toggle-label">
+            <div class="toggle-track">
+              <div class="toggle-thumb">
+                <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </div>
+              <div class="toggle-icons">
+                <svg class="track-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+                <svg class="track-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <article id="content" class="content" aria-live="polite">
+        <!-- Test Video Section -->
+        <section class="content-section" id="test-video">
+          <h2>Test Video - Alt Yazı Sistemi</h2>
+          <div class="text-content">
+            <p>Bu test videosu alt yazı sisteminin çalışıp çalışmadığını kontrol etmek için.</p>
+          </div>
+          
+          <!-- HCP Directory Link -->
+          <div class="hcp-directory-link">
+            <a href="hcp.html" class="hcp-link-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Healthcare Provider Directory
+            </a>
+          </div>
+          <div class="video-container">
+            <video controls preload="metadata" style="width: 100%; height: auto; border-radius: 8px;" data-video-id="1-EN">
+              <source src="videos/1-EN.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="subtitle-area" data-video-id="1-EN" style="display: block !important; background: #333 !important; border: 2px solid #22c55e !important; min-height: 60px !important;">
+            <div class="subtitle-text" style="color: white !important; background: rgba(0,0,0,0.8) !important; padding: 15px !important; font-size: 16px !important; text-align: center !important;">
+              📝 ALT YAZI ALANI TEST 📝<br>
+              Bu metin görünüyorsa HTML çalışıyor!<br>
+              Video oynatıldığında gerçek alt yazılar burada görünecek.
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> Loop and Learn</small>
+    </footer>
+
+
+    <!-- Floating Language Switcher -->
+    <div class="floating-lang-switcher" id="floatingLangSwitcher">
+      <button class="floating-lang-btn" id="floatingLangBtn" aria-label="Language selector">
+        <svg class="world-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </button>
+      <div class="lang-options" id="langOptions">
+        <button class="lang-option-btn" data-lang="en" id="langEn" style="background-image: url('uk-usa.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 0;"></button>
+        <button class="lang-option-btn" data-lang="it" id="langIt" style="background-image: url('italy.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 0;"></button>
+        <button class="lang-option-btn" data-lang="tr" id="langTr" title="Türkçe" style="background-image: url('turkey.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 0;"></button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mammoth/mammoth.browser.min.js"></script>
+    <script src="js/modules/subtitle.js"></script>
+    <script src="app.js?v=1234567890"></script>
+  </body>
+  </html>
+
+
